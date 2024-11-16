@@ -1,12 +1,42 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Mobile Menu
   const toggleButton = document.querySelector(".navbar__mobile-menu-toggle");
   const mobileMenu = document.querySelector(".navbar__mobile-menu-items");
 
   toggleButton.addEventListener("click", function () {
     mobileMenu.classList.toggle("active");
   });
-});
 
+  // Video Modal
+  const modal = document.getElementById("videoModal");
+  const videoButton = document.querySelector(".preview__video-button");
+  const closeButton = document.querySelector(".modal__close-button");
+  const videoPlayer = document.getElementById("videoPlayer");
+  // Open modal when clicked
+  videoButton.addEventListener("click", function () {
+    // Show modal
+    modal.style.display = "block";
+
+    // Replace the src attribute with the video url
+    videoPlayer.src =
+      "https://www.youtube.com/embed/DdEhxeAV7y8?si=18yVPnhkf4NcALwl";
+
+    // CloseModal on Close Button
+    closeButton.addEventListener("click", function () {
+      modal.style.display = "none";
+      videoPlayer.src = "";
+    });
+
+    // Close Modal on outter click
+    window.addEventListener("click", function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        videoPlayer.src = "";
+      }
+    });
+  });
+});
+// Navigation background on scroll
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
 
