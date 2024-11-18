@@ -426,6 +426,113 @@ img {
   font-weight: 400;
 }
 
+/* Screenshots */
+.screenshots {
+  padding: 6rem 2rem;
+  background-color: var(--tertiary-color);
+  text-align: center;
+}
+.screenshots__container {
+  max-width: 1200px;
+}
+.screenshots__heading {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin: 0 auto 3rem;
+  border-bottom: 2px solid var(--primary-color);
+  width: 300px;
+}
+.screenshots__images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.screenshots__images img {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+/* Download */
+.download {
+  padding: 11.5rem 2rem 8rem;
+  background: #000 url(../images/download-background.jpg) center center/cover
+    no-repeat;
+}
+.download__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.download__content {
+  max-width: 500px;
+}
+.download__description {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.download__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.download__buttons i {
+  margin-right: 0.5rem;
+}
+.download__button {
+  padding: 1rem 2rem;
+}
+.download__image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Footer */
+.footer {
+  background: var(--tertiary-color);
+  color: #9f9caf;
+  padding: 4rem 2rem;
+  font-size: 0.9rem;
+}
+.footer__links-link,
+.footer__social-links {
+  color: #9f9caf;
+}
+.footer__links-link:hover,
+.footer__social-links:hover {
+  color: #fff;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.footer__title {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Inner Header */
+.inner-header {
+  background: #000 url(../images/header-background.jpg) center center/cover
+    no-repeat;
+  padding: 10rem 2rem 6rem;
+}
+
 /* Media Querries */
 @media (max-width: 992px) {
   /*Hero */
@@ -502,6 +609,33 @@ img {
     flex-direction: column;
     gap: 2rem;
     margin-top: 4rem;
+  }
+  /* Downloads */
+  .download {
+    padding-top: 10rem;
+    text-align: center;
+  }
+
+  .download__container {
+    flex-direction: column-reverse;
+  }
+  .download__buttons {
+    flex-direction: column;
+  }
+  .download__button {
+    width: 100%;
+    padding-top: 0.7rem;
+  }
+  /* Footer */
+  .footer {
+    font-size: 1rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+    max-width: 600px;
   }
 }
 
