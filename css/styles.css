@@ -41,7 +41,7 @@ img {
   padding: 0.5rem 2rem;
   background-color: var(--primary-color);
   color: #fff;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   border: 2px solid transparent;
   font-weight: 600;
   transition: background-color 0.3s ease;
@@ -67,8 +67,8 @@ img {
   backdrop-filter: blur(10px);
 }
 .navbar__logo img {
-  width: 112px;
-  height: 36px;
+  width: 7rem;
+  height: 2.25rem;
 }
 .navbar__container {
   display: flex;
@@ -185,8 +185,8 @@ img {
 }
 
 .testimonials__image img {
-  width: 96px;
-  height: 96px;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   margin-right: auto;
   margin-left: auto;
@@ -212,7 +212,7 @@ img {
   text-transform: uppercase;
 }
 .features__description {
-  max-width: 600px;
+  max-width: 37.5rem;
   margin: 1rem auto 4rem;
 }
 .features__grid {
@@ -263,7 +263,7 @@ img {
   text-transform: uppercase;
 }
 .preview__description {
-  max-width: 600px;
+  max-width: 37.5rem;
   font-size: 1.6rem;
   margin: 1rem auto 4rem;
 }
@@ -272,7 +272,7 @@ img {
 }
 .preview__video-wrapper img {
   width: 100%;
-  max-width: 900px;
+  max-width: 56.25rem;
   border-radius: 10px;
 }
 
@@ -360,17 +360,17 @@ img {
 .modal__content {
   background-color: rgba(0, 0, 0, 0.5);
   margin: 10% auto;
-  padding: 20px;
+  padding: 1.25rem;
   border: 1px solid #888;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 37.5rem;
   position: relative;
 }
 .modal__close-button {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 40px;
+  top: 0.625rem;
+  right: 1.25rem;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 /* Details */
@@ -433,14 +433,14 @@ img {
   text-align: center;
 }
 .screenshots__container {
-  max-width: 1200px;
+  max-width: 75rem;
 }
 .screenshots__heading {
   font-size: 2.3rem;
   text-transform: uppercase;
   margin: 0 auto 3rem;
   border-bottom: 2px solid var(--primary-color);
-  width: 300px;
+  width: 18.75rem;
 }
 .screenshots__images {
   display: flex;
@@ -466,7 +466,7 @@ img {
   gap: 2rem;
 }
 .download__content {
-  max-width: 500px;
+  max-width: 31.25rem;
 }
 .download__description {
   font-size: 1.5rem;
@@ -489,7 +489,7 @@ img {
 }
 .download__image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem;
 }
 
 /* Footer */
@@ -553,7 +553,7 @@ img {
 .pricing__card-box {
   background: rgba(255, 255, 255, 0.1);
   padding: 2.5rem;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   margin-bottom: 2rem;
 }
 .pricing__card-title {
@@ -581,6 +581,36 @@ img {
   padding: 3rem 2rem;
   color: #9f9caf;
   text-align: center;
+}
+/* Details Features */
+.details-features {
+  background: var(--tertiary-color);
+  padding: 4rem 2rem;
+}
+.details-features__title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.details-features__list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+}
+.details-features__list-item i {
+  color: var(--primary-color);
+}
+
+.details-features__list-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 /* Media Querries */
@@ -633,13 +663,13 @@ img {
   .features__grid-column-right .features__grid-item {
     text-align: center;
     flex-direction: column-reverse;
-    max-width: 400px;
+    max-width: 25rem;
   }
   .features__grid-item-icon {
     margin: 0 auto;
   }
   .features__grid-column-center img {
-    max-width: 300px;
+    max-width: 18.75rem;
   }
   /* Details */
   .details__grid {
@@ -647,12 +677,12 @@ img {
     text-align: center;
   }
   .details__grid-image img {
-    max-width: 400px;
+    max-width: 25rem;
     width: 100%;
   }
   .details__grid-content {
     width: 100%;
-    max-width: 400px;
+    max-width: 25rem;
     margin: 0 auto;
   }
   .details__icons {
@@ -685,7 +715,7 @@ img {
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: center;
-    max-width: 600px;
+    max-width: 37.5rem;
   }
 }
 
@@ -719,5 +749,10 @@ img {
   }
   .pricing__card {
     margin-bottom: 4.5rem;
+  }
+  /* Details Features */
+  .details-features__list-item {
+    flex-direction: column;
+    text-align: center;
   }
 }
