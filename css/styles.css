@@ -539,9 +539,15 @@ img {
 }
 .pricing__title {
   font-size: 2.3rem;
+<<<<<<< HEAD
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+=======
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 2rem;
+>>>>>>> 40db5a5f82495f914f1fb746c40fc65bc92234c2
 }
 .pricing__cards {
   display: flex;
@@ -553,26 +559,45 @@ img {
 .pricing__card-box {
   background: rgba(255, 255, 255, 0.1);
   padding: 2.5rem;
+<<<<<<< HEAD
+  border-radius: 30px;
+=======
   border-radius: 1.875rem;
+>>>>>>> 40db5a5f82495f914f1fb746c40fc65bc92234c2
   margin-bottom: 2rem;
 }
 .pricing__card-title {
   font-size: 1.4rem;
   text-transform: uppercase;
+<<<<<<< HEAD
+}
+.pricing__card-price {
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 700;
+=======
   margin-bottom: 1rem;
 }
 .pricing__card-price {
   font-size: 2.3rem;
   font-weight: 700;
   color: var(--primary-color);
+>>>>>>> 40db5a5f82495f914f1fb746c40fc65bc92234c2
   margin-bottom: 1rem;
 }
 .pricing__card-list {
   text-align: left;
+<<<<<<< HEAD
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+.pricing__card-item i {
+=======
   line-height: 2.5;
   font-weight: 300;
 }
 .pricing__card-list i {
+>>>>>>> 40db5a5f82495f914f1fb746c40fc65bc92234c2
   color: var(--primary-color);
   margin-right: 0.5rem;
 }
@@ -588,6 +613,21 @@ img {
   padding: 4rem 2rem;
 }
 .details-features__title {
+<<<<<<< HEAD
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.details-features__list-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 20px;
+=======
   text-align: center;
   font-size: 2.3rem;
   font-weight: 700;
@@ -602,11 +642,15 @@ img {
   background: rgba(255, 255, 255, 0.1);
   padding: 1.5rem;
   border-radius: 1.25rem;
+>>>>>>> 40db5a5f82495f914f1fb746c40fc65bc92234c2
 }
 .details-features__list-item i {
   color: var(--primary-color);
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 40db5a5f82495f914f1fb746c40fc65bc92234c2
 .details-features__list-title {
   font-size: 1.5rem;
   font-weight: 600;
